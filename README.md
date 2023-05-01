@@ -38,10 +38,11 @@ Escolhemos dois Datasets:
 - Qualidade da Água em cada estação - https://data.ca.gov/dataset/water-quality-data/resource/b27f05a6-91af-4d76-87c9-47df0c5d1318Ç = Escolhemos esse Dataset pois ele possuí atualizações frequentes.
 Esse dataset traz informações sobre estações de coleta de agua, contendo colunas como identificação das estações  por nome e código, posição latitude e longitude, tipo da estação e momento da coleta.
 Estrutura:
+
 Column_name | Type
 --- | ---
-station_id |	text		
-station_name |	text		
+station_id | text		
+station_name | text		
 full_station_name |	text		
 station_number |	text		
 station_type |	text		
@@ -55,6 +56,7 @@ sample_date_max |	text
 
 - Vigilância de casos de covid-19 - https://catalog.data.gov/dataset/covid-19-case-surveillance-public-use-data/resource/a03f3502-58e9-4ec4-95a9-a651ca4e86e8?inner_span=True = Escolhemos esse Dataset por conta do volume alto de registros, sendo assim muito pesado para carregar no HDFS.
 Estrutura:
+
 Description	|	Type
 ---	|	---
 Date case was first reported to the CDC	|	Date
