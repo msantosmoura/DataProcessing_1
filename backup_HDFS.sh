@@ -31,12 +31,12 @@ for i in {30..1}
  done
 
 #Zipa o diretorio contendo os arquivos dos ultimos 30 dias e envia pro backup do HDFS e deleta os diretorios criados
-zip $DIR/WATER_$DATE.zip $DIR_WATER
+zip -r $DIR/WATER_$DATE.zip $DIR_WATER/*
 hadoop fs -put $DIR/WATER_$DATE.zip $HDFS_WATER/bkp/
 rm $DIR/WATER_$DATE.zip
 rm -r $DIR_WATER
 
-zip $DIR/COVID_$DATE.zip $DIR_COVID
+zip -r $DIR/COVID_$DATE.zip $DIR_COVID/*
 hadoop fs -put $DIR/COVID_$DATE.zip $HDFS_COVID/bkp/
 rm $DIR/COVID_$DATE.zip
 rm -r $DIR_COVID
