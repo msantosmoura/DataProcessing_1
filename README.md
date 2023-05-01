@@ -2,12 +2,14 @@
 Atividade 1 da aula de Data Processing, MBA Engenharia de Dados - 25ABD
 
 Marco Aurelio Kawassa Nakasima - 350086
+Luiz Venâncio Jaldin de Oliveira - 347915
 
 -------------------------------------------
 
 Ambiente:
+Foi utilizado o ambiente docker namenode que pode ser encontrado nesse repositório https://github.com/fabiogjardim/bigdata_docker 
 
-Tivemos que ajeitar o ambiente para utilizarmos as ferramentas Wget e Zip.
+Após a execução do ambiente realizamos alguns ajustes para utilizarmos as ferramentas Wget e Zip.
 
 Alteramos o arquivo /etc/apt/sources.list e colocamos:
 ```
@@ -56,7 +58,7 @@ A imagem a seguir, resgatamos o ZIP gerado pelo script de backup, contendo os ar
 ![image](https://user-images.githubusercontent.com/13857701/235388538-52354451-d41a-4a2f-93e5-14820c15a629.png)
 
 
-Decimos essa estrutura pois conseguimos identificar facilmente cada dataset e quando que foi extraída apenas pelos nomes do arquivos, e por estarem ordenados no formato YYYY/mm/dd, conseguimos percorrer os arquivos de forma crescente caso necessário.
+Desenhamos essa estrutura pois conseguimos identificar facilmente cada dataset e quando que foi extraída apenas pelos nomes do arquivos, e por estarem ordenados no formato YYYY/mm/dd, conseguimos percorrer os arquivos de forma crescente caso necessário.
 
 Também fizemos um step extra de registros de logs, para cada execução dos scripts loadDataset_HDFS.sh e backup_HDFS.sh, guardamos o resultado da execução dos scripts (Sucesso ou Falha) em suas respectivas datas que foram rodados.
 
