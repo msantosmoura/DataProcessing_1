@@ -6,8 +6,9 @@ Marco Aurelio Kawassa Nakasima - 350086
 -------------------------------------------
 
 Ambiente:
+Foi utilizado o ambiente docker namenode que pode ser encontrado nesse repositório https://github.com/fabiogjardim/bigdata_docker 
 
-Foi necessário ajustar o ambiente para utilizarmos as ferramentas Wget e Zip.
+Após a execução do ambiente realizamos alguns ajustes para utilizarmos as ferramentas Wget e Zip.
 
 Alteramos o arquivo /etc/apt/sources.list e colocamos:
 ```
