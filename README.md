@@ -9,7 +9,7 @@ Ambiente:
 
 Tivemos que ajeitar o ambiente para utilizarmos as ferramentas Wget e Zip.
 
-Alteramos o arquivo /etc/apt/sources.list e colocamos esse conteúdo:
+Alteramos o arquivo /etc/apt/sources.list e colocamos:
 ```
 deb http://security.debian.org/ jessie/updates main
 
