@@ -47,9 +47,14 @@ hadoop fs -mkdir /atividade_1/Water_Quality/bkp
 ![image](https://user-images.githubusercontent.com/13857701/235383811-e817ee56-da65-4fa1-be72-81c76478e8d9.png)
 
 Criamos uma pasta para cada um dos Datasets e armazenamos os datasets diariamente, colocando a data na qual ela foi extraída junto ao nome do arquivo.
+
 E para os arquivos de backup, criamos uma pasta /bkp/ em cada um dos diretórios no qual armazenamos diretórios zipados contendo 30 dias de arquivo coletado.
 
 ![image](https://user-images.githubusercontent.com/13857701/235384543-b4487673-4ff8-4e11-8b60-bbc6d3997cb0.png)
+
+A imagem a seguir, resgatamos o ZIP gerado pelo script de backup, contendo os arquivos dos últimos 30 dias:
+![image](https://user-images.githubusercontent.com/13857701/235388538-52354451-d41a-4a2f-93e5-14820c15a629.png)
+
 
 Decimos essa estrutura pois conseguimos identificar facilmente cada dataset e quando que foi extraída apenas pelos nomes do arquivos, e por estarem ordenados no formato YYYY/mm/dd, conseguimos percorrer os arquivos de forma crescente caso necessário.
 
