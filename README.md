@@ -2,6 +2,7 @@
 Atividade 1 da aula de Data Processing, MBA Engenharia de Dados - 25ABD
 
 Marco Aurelio Kawassa Nakasima - 350086
+Luiz Venâncio Jaldin de Oliveira - 347915
 
 -------------------------------------------
 
