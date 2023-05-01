@@ -3,6 +3,7 @@ Atividade 1 da aula de Data Processing, MBA Engenharia de Dados - 25ABD
 
 Marco Aurelio Kawassa Nakasima - 350086
 Luiz Venâncio Jaldin de Oliveira - 347915
+Matheus Santos de Moura - 349850
 Vitor Sillos Alonso - 347738
 
 -------------------------------------------
@@ -36,50 +37,31 @@ apt-get install zip
 -------------------------------------------
 Escolhemos dois Datasets:
 - Qualidade da Água em cada estação - https://data.ca.gov/dataset/water-quality-data/resource/b27f05a6-91af-4d76-87c9-47df0c5d1318Ç = Escolhemos esse Dataset pois ele possuí atualizações frequentes.
-Esse dataset traz informações sobre estações de coleta de agua, contendo colunas como identificação das estações  por nome e código, posição latitude e longitude, tipo da estação e momento da coleta.
-Estrutura:
-
-Column_name | Type
---- | ---
-station_id | text		
-station_name | text		
-full_station_name |	text		
-station_number |	text		
-station_type |	text		
-latitude |	text		
-longitude |	text		
-county_name |	text		
-sample_count |	text		
-sample_date_min |	text		
-sample_date_max |	text
 
 
 - Vigilância de casos de covid-19 - https://catalog.data.gov/dataset/covid-19-case-surveillance-public-use-data/resource/a03f3502-58e9-4ec4-95a9-a651ca4e86e8?inner_span=True = Escolhemos esse Dataset por conta do volume alto de registros, sendo assim muito pesado para carregar no HDFS.
-Estrutura:
-
-Description	|	Type
----	|	---
-Date case was first reported to the CDC	|	Date
-The earlier of the Clinical Date (date related to the illness or specimen collection) or the Date Received by CDC	|	Date
-Date of first positive specimen collection	|	Date
-Date of symptom onset	|	Date
-What is the current status of this person? 	|	String
-Sex	|	String
-Age group	|	String
-Race and Ethnicity (combined)	|	String
-Was the patient hospitalized?	|	Character
-Was the patient admitted to an intensive care unit (ICU)?	|	Character
-Did the patient die as a result of this illness?	|	Character
-Pre-existing medical conditions?	|	Character
-
 -------------------------------------------
+Estrutura de pastas do datanode:
+```
+
+mkdir fiap/
+mkdir fiap/dps/
+mkdir fiap/dps/atividade_1/
+mkdir fiap/dps/atividade_1/scripts/
+mkdir fiap/dps/atividade_1/scripts/data_processing/
+mkdir fiap/dps/atividade_1/scripts/shell/
+mkdir fiap/dps/atividade_1/scripts/data_processing/logs/
+
+```
 Estrutura de pastas dentro do HDFS:
 ```
-hadoop fs -mkdir /atividade_1/
-hadoop fs -mkdir /atividade_1/COVID_19/
-hadoop fs -mkdir /atividade_1/COVID_19/bkp
-hadoop fs -mkdir /atividade_1/Water_Quality/
-hadoop fs -mkdir /atividade_1/Water_Quality/bkp
+hadoop fs -mkdir /fiap/
+hadoop fs -mkdir /fiap/dps/
+hadoop fs -mkdir /fiap/dps/atividade_1/
+hadoop fs -mkdir /fiap/dps/atividade_1/COVID_19/
+hadoop fs -mkdir /fiap/dps/atividade_1/C/Water_Quality/
+hadoop fs -mkdir /fiap/dps/atividade_1/Water_Quality/bkpOVID_19/bkp
+hadoop fs -mkdir /fiap/dps/atividade_1
 ```
 ![image](https://user-images.githubusercontent.com/13857701/235383811-e817ee56-da65-4fa1-be72-81c76478e8d9.png)
 
