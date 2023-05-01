@@ -6,6 +6,7 @@ Marco Aurelio Kawassa Nakasima - 350086
 -------------------------------------------
 
 Ambiente:
+
 Tivemos que ajeitar o ambiente para utilizarmos as ferramentas Wget e Zip.
 
 Alteramos o arquivo /etc/apt/sources.list e colocamos esse conteúdo:
