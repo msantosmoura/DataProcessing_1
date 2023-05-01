@@ -41,6 +41,10 @@ Escolhemos dois Datasets:
 
 - Vigilância de casos de covid-19 - https://catalog.data.gov/dataset/covid-19-case-surveillance-public-use-data/resource/a03f3502-58e9-4ec4-95a9-a651ca4e86e8?inner_span=True = Escolhemos esse Dataset por conta do volume alto de registros, sendo assim muito pesado para carregar no HDFS.
 -------------------------------------------
+
+Criamos essa estrutura de pastas para ter a possibilidade de utilizar esse mesmo ambiente para outras tarefas,
+incluimos a pasta dps no qual se refere a sigla da materia.
+
 Estrutura de pastas do datanode:
 ```
 
