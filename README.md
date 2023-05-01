@@ -7,6 +7,7 @@ Luiz Venâncio Jaldin de Oliveira - 347915
 -------------------------------------------
 
 Ambiente:
+
 Foi utilizado o ambiente docker namenode que pode ser encontrado nesse repositório https://github.com/fabiogjardim/bigdata_docker 
 
 Após a execução do ambiente realizamos alguns ajustes para utilizarmos as ferramentas Wget e Zip.
