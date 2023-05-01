@@ -45,7 +45,7 @@ rm -r $DIR_COVID
 export err=$?
 
 if [ "$err"="0" ]; then
- echo "Backup Realizado com Sucesso!" > $LOG_FILE
+ echo "Backup Realizado com Sucesso dos últimos 30 dias: $DATE" > $LOG_FILE
  mv $LOG_FILE $DIR/logs
  exit 0
 else
